@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grade converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<h1>
+
+    Grade Converter
+</h1>
+<div class="table">
+    <table>
+        <thead>
+            <tr>
+                <th>Grade</th>
+                <th>Scale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>A1</th>
+                <td>90.00 - 100.00</td>
+            </tr>
+            <tr>
+                <th>A+</th>
+                <td>80.00 - 89.99</td>
+            </tr>
+            <tr>
+                <th>A</th>
+                <td>70.00 - 79.99</td>
+            </tr>
+            <tr>
+                <th>B</th>
+                <td>60.00 - 69.99</td>
+            </tr>
+            <tr>
+                <th>C</th>
+                <td>50.00 - 59.99</td>
+            </tr>
+            <tr>
+                <th>D</th>
+                <td>40.00 - 49.99</td>
+            </tr>
+            <tr>
+                <th>E</th>
+                <td>33.00 - 39.99</td>
+            </tr>
+            <tr>
+                <th>Failed</th>
+                <td>Below 32.99</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<body>
+    <script type="module">
+
+        let userPercentage = prompt("enter your percentage")
+
+        let percentage = userPercentage
+
+        if (percentage > 100) {
+            alert("invalid");
+            console.log("invalid");
+        }
+        else if (percentage >= 90) {
+            alert("Grade A1");
+            console.log("Grade A1");
+        }
+        else if (percentage >= 80) {
+            alert("Grade A+");
+            console.log("Grade A+");
+        }
+        else if (percentage >= 70) {
+            alert("Grade A");
+            console.log("Grade A");
+        }
+        else if (percentage >= 60) {
+            alert("Grade B");
+            console.log("Grade B");
+        }
+        else if (percentage >= 50) {
+            alert("Grade C");
+            console.log("Grade C");
+        }
+        else if (percentage >= 40) {
+            alert("Grade D");
+            console.log("Grade D");
+        }
+        else if (percentage >= 33) {
+            alert("Grade E");
+            console.log("Grade E");
+        }
+        else if (percentage < 33) {
+            alert("Failed");
+            console.log("Failed");
+        }
+        else {
+            percentage < 0
+            alert("Invalid");
+            console.log("Invalid");
+        }
+
+    </script>
+</body>
+
+</html>
